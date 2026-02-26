@@ -10253,13 +10253,13 @@ html.lenis body {
   position: relative;
   transition: all 0.3s linear;
 }
-.main-menu li.menu-item-has-children > a::after {
+/* .main-menu li.menu-item-has-children > a::after {
   content: "\f107";
   font-family: var(--rs-ff-fontawesome);
   margin-inline-start: 5px;
   font-weight: 500;
   font-size: 15px;
-}
+} */
 .main-menu .submenu {
   background-color: var(--rs-white);
   box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.1);
@@ -28498,3 +28498,265 @@ a.ui-button:active {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/* Padding-ah remove panni frame-kulla kondu vara */
+.rs-banner-area.rs-banner-two {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.rs-banner-wrapper {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Header mela vara padding issue fix */
+.rs-header-area {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Section Title Alignment */
+.rs-section-title {
+    text-align: left; /* Ensures everything in title stays left */
+}
+
+/* Background & Heading Colors */
+.bg-white {
+    background-color: #ffffff !important;
+}
+.black-color {
+    color: #111111 !important;
+    font-weight: 700;
+}
+.red-color {
+    color: #ff0000 !important;
+}
+
+/* Card Styling */
+.rs-addon-services-item.style-2 {
+    background: #fdfdfd; 
+    padding: 40px;
+    border: 1px solid #f2f2f2;
+    border-bottom: 3px solid #eeeeee;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+/* Number Visibility - Bold Black */
+.rs-addon-services-item.style-2 .number {
+    font-size: 45px;
+    font-weight: 900;
+    color: #111111 !important; /* Pure Black */
+    opacity: 0.8; /* Adjusted for better visibility but still looking professional */
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Hover Effect */
+.rs-addon-services-item.style-2:hover {
+    border-bottom: 3px solid #ff0000;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+/* Red CTA Button (Engineering Style) */
+.btn-red-cta {
+    background-color: #ff0000 !important;
+    color: #ffffff !important;
+    padding: 14px 35px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 0px;
+    transition: all 0.3s ease;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-red-cta:hover {
+    background-color: #cc0000 !important;
+    color: #ffffff !important;
+    transform: translateY(-3px);
+}
+
+.cta-box {
+    background: #f9f9f9 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Breadcrumb Background Shade Overlay */
+.rs-breadcrumb-bg {
+    position: relative;
+}
+
+.rs-breadcrumb-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Intha rgba value mathuna shade dark/light aagum (0.7 is 70% darkness) */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.45));
+    z-index: 1;
+}
+
+/* Content shade-ku mela vara idhu mukkiyam */
+.rs-breadcrumb-content-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+/* Navbar clear-ah theriyala-na idhayum add panniko buddy */
+.rs-header-area.rs-sticky-header.bg-white {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Banner Background Shade Overlay */
+.rs-banner-bg-thumb {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.rs-banner-bg-thumb::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Navbar area-va nalla dark-ah kaatta top opacity 0.8 kuduthurukan */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.3) 100%);
+    z-index: 1;
+}
+
+/* Ensure banner content stays on top of the shade */
+.rs-banner-wrapper {
+    position: relative;
+    z-index: 10;
+}
+
+/* Services Details Breadcrumb Shade Fix */
+.rs-breadcrumb-bg {
+    position: relative;
+}
+
+.rs-breadcrumb-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Navbar area-va nalla dark-ah kaatta top-la 80% darkness kuduthurukan */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%);
+    z-index: 1;
+}
+
+/* Text and Links shade-ku mela vara idhu mukkiyam */
+.rs-breadcrumb-content-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+/* Optional: Navbar background visible-ah irukka shadow effect */
+.rs-header-area.rs-sticky-header.bg-white {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Work process text white color */
+.rs-work-step-five .rs-section-subtitle,
+.rs-work-step-five .rs-section-title,
+.rs-work-step-five .rs-work-step-title,
+.rs-work-step-five .rs-work-step-text,
+.rs-work-step-five .descrip {
+    color: #ffffff !important;
+}
+
+.rs-work-step-bg-thumb {
+    position: absolute;
+    inset: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rs-work-step-bg-thumb::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65); /* increase to 0.75 if needed */
+    z-index: 1;
+}
+
+.rs-work-step-area .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Footer background dark shade */
+.rs-footer-area {
+    position: relative;
+    z-index: 1;
+}
+
+.rs-footer-bg-thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+}
+
+/* DARK OVERLAY */
+.rs-footer-bg-thumb::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65); /* Shade intensity */
+    z-index: -1;
+}
+
+/* Full screen hero */
+#home.rs-banner-area {
+    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Slider full height */
+#home .swiper,
+#home .swiper-wrapper,
+#home .swiper-slide,
+#home .rs-banner-item-wrapper {
+    height: 100vh;
+    position: relative;
+}
+
+/* Background image full cover */
+#home .rs-banner-bg-thumb {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+/* VERY IMPORTANT – bring content above background */
+#home .rs-banner-item {
+    position: relative;
+    z-index: 5;
+}
