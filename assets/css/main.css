@@ -28774,3 +28774,29 @@ a.ui-button:active {
     }
 
 }
+
+/* ===== HEADER MENU PERFECT CENTER ALIGN ===== */
+
+.rs-header-inner {
+    display: grid !important;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+.rs-header-left {
+    justify-self: start;
+}
+
+.rs-header-menu {
+    justify-self: center;
+}
+
+.rs-header-right {
+    justify-self: end;
+}
+
+/* menu items horizontal align */
+.rs-header-menu .multipage-menu {
+    display: flex;
+    gap: 30px;
+}
