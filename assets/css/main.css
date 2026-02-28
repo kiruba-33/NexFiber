@@ -28800,3 +28800,112 @@ a.ui-button:active {
     display: flex;
     gap: 30px;
 }
+
+/* Active Menu Orange Highlight */
+.main-menu ul li.active > a {
+    color: #ff7a00 !important;  /* Strong Orange */
+}
+
+/* Footer Links Proper Align */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links li a {
+    display: inline-block;
+    white-space: nowrap; /* prevent 2 line break */
+    transition: color 0.3s ease; /* smooth hover */
+}
+
+/* Remove hover jump */
+.footer-links li a:hover {
+    transform: none !important;
+}
+
+.rs-banner-area {
+    position: relative;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.rs-banner-bg-thumb {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+/* Dark Overlay */
+.rs-banner-area::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 2;
+}
+
+/* Make content above overlay */
+.rs-banner-area .container {
+    position: relative;
+    z-index: 5;
+}
+
+/* FORCE Equal Height Cards */
+
+.process-counts > div {
+    display: flex;
+}
+
+.rs-services-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.rs-services-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.rs-services-thumb img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.rs-services-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.rs-services-btn-wrapper {
+    margin-top: auto;
+}
+
+/* Make Work Process section text white */
+.rs-work-process-area {
+    position: relative;
+}
+
+.rs-work-process-area .rs-section-subtitle,
+.rs-work-process-area .rs-section-title,
+.rs-work-process-area .rs-work-step-title,
+.rs-work-process-area .rs-work-step-descrip p,
+.rs-work-process-area .rs-work-step-number {
+    color: #ffffff !important;
+}
+
+/* Optional: make numbers slightly brighter */
+.rs-work-process-area .rs-work-step-number {
+    opacity: 0.8;
+}
